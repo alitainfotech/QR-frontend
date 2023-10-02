@@ -1,0 +1,87 @@
+import { createVuetify  } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+const myCustomLightTheme = {
+    dark: false,
+    colors: {
+      background: '#FFFFFF',
+      surface: '#FFFFFF',
+      primary: '#050336',
+      'primary-lighten-1': '#1E1C4A',
+      'primary-lighten-2': '#37355E',
+      'primary-lighten-3': '#504F72',
+      'primary-lighten-4': '#696886',
+      'primary-lighten-5': '#82819B',
+      'primary-lighten-6': '#9B9AAF',
+      'primary-lighten-7': '#B4B3C3',
+      'primary-lighten-8': '#CDCDD7',
+      'primary-lighten-9': '#E6E6EB',
+      secondary: '#787586',
+      'secondary-lighten-1': '#858392',
+      'secondary-lighten-2': '#93919E',
+      'secondary-lighten-3': '#A19EAA',
+      'secondary-lighten-4': '#AEACB6',
+      'secondary-lighten-5': '#BBBAC3',
+      'secondary-lighten-6': '#C9C8CF',
+      'secondary-lighten-7': '#D7D6DB',
+      'secondary-lighten-8': '#E4E3E7',
+      'secondary-lighten-9': '#F1F1F3',
+      grey:'#ADA9BB',
+      'grey-lighten-1': '#B5B2C2',
+      'grey-lighten-2': '#BDBAC9',
+      'grey-lighten-3': '#C6C3CF',
+      'grey-lighten-4': '#CECBD6',
+      'grey-lighten-5': '#D6D4DD',
+      'grey-lighten-6': '#DEDDE4',
+      'grey-lighten-7': '#E6E5EB',
+      'grey-lighten-8': '#EFEEF1',
+      'grey-lighten-9': '#F7F6F8',
+      success: '#339900',
+      'success-lighten-1': '#47A31A',
+      'success-lighten-2': '#5CAD33',
+      'success-lighten-3': '#70B84D',
+      'success-lighten-4': '#85C266',
+      'success-lighten-5': '#99CC80',
+      'success-lighten-6': '#ADD699',
+      'success-lighten-7': '#C2E0B3',
+      'success-lighten-8': '#D6EBCC',
+      'success-lighten-9': '#EBF5E5',
+      warning: '#F9B903',
+      'warning-lighten-1': '#FAC01C',
+      'warning-lighten-2': '#FAC735',
+      'warning-lighten-3': '#FBCE4F',
+      'warning-lighten-4': '#FBD568',
+      'warning-lighten-5': '#FCDC81',
+      'warning-lighten-6': '#FDE39A',
+      'warning-lighten-7': '#FDEAB3',
+      'warning-lighten-8': '#FEF1CD',
+      'warning-lighten-9': '#FEF8E6',
+      error: '#E81313',
+      'error-lighten-1': '#EA2B2B',
+      'error-lighten-2': '#ED4242',
+      'error-lighten-3': '#EF5A5A',
+      'error-lighten-4': '#F17171',
+      'error-lighten-5': '#F38989',
+      'error-lighten-6': '#F6A1A1',
+      'error-lighten-7': '#F8B8B8',
+      'error-lighten-8': '#EFEEF0',
+      'error-lighten-9': '#FDE7E7',
+      info: '#2196F3',
+    },
+  }
+export default {
+    install: (app, options) => {
+        const vuetifyPlugin = createVuetify({
+            theme: {
+                defaultTheme: 'myCustomLightTheme',
+                themes: {
+                  myCustomLightTheme,
+                },
+              },
+            components,
+            directives,
+          })
+          app.use(vuetifyPlugin)
+          
+    }
+  }

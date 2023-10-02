@@ -1,0 +1,41 @@
+
+@import './base.scss';
+@import './_variable.scss';
+@import 'vuetify/styles';
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima-Italic.woff2') format('woff2'),
+        url('../fonts/Optima-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima-Medium.woff2') format('woff2'),
+        url('../fonts/Optima-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima.woff2') format('woff2'),
+        url('../fonts/Optima.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima-Bold.woff2') format('woff2'),
+        url('../fonts/Optima-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
