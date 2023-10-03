@@ -1,6 +1,6 @@
 <template>
   <button
-    class="d-flex flex-column justify-center align-center"
+    class="d-flex flex-column"
     style="height: 46px; width: 56px"
   >
     <slot name="icon"></slot>
