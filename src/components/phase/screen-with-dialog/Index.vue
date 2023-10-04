@@ -91,7 +91,14 @@
         iconSize="small"
       />
     </div>
-    <InfoDialog />
+    <InfoDialog>
+      <template v-slot:title>
+        Component(s) Stored
+      </template>
+      <template v-slot:content>
+        You have successfully entered these components into storage.
+      </template>
+    </InfoDialog>
   </div>
 </template>
 <script setup>

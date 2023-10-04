@@ -5,16 +5,14 @@
         <div>
           <v-icon class="close-icon" size="small" color="secondary">mdi-close</v-icon>
           <v-card-title class="py-6 pl-4 justify-center d-flex"
-            ><span class="text-primary text-20-bold">
-              Component(s) Stored</span
-            ></v-card-title
+            ><span class="text-primary text-20-bold"><slot name="title"></slot></span></v-card-title
           >
         </div>
 
         <v-divider class="border-opacity-25" color="secondary"></v-divider>
         <v-card-text class="px-8 py-9 text-center">
           <span class="text-secondary text-18-medium"
-            >You have successfully entered these components into storage.</span
+            ><slot name="content"></slot></span
           >
         </v-card-text>
         <v-divider class="border-opacity-25" color="secondary"></v-divider>
@@ -38,10 +36,13 @@
 import { ref } from "vue";
 const dialog = ref(true);
 </script>
-<style scoped>
+<style>
 .close-icon {
   position: absolute;
   right: 16px;
   top: 24px;
+}
+.v-overlay__scrim {
+    opacity: 0.7 !important;
 }
 </style>
