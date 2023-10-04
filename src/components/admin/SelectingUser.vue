@@ -3,7 +3,9 @@
     <p class="text-primary text-18-bold text-uppercase text-center mb-2">
       select sub-products
     </p>
-    <div class="text-primary-lighten-3 text-14-medium text-uppercase text-center">
+    <div
+      class="text-primary-lighten-3 text-14-medium text-uppercase text-center"
+    >
       SELECT THE SUB-PRODUCTS FOR WHICH <br />
       YOU WANT TO HANDLE FOR
     </div>
@@ -12,32 +14,37 @@
         id="checkbox1"
         label="Manager A"
         value="Manager A"
-        class="bg01"
+        borderColor="#CBCACA"
+        color="#D9D9D9"
         checked="true"
       />
       <BaseCheckBox
         id="checkbox2"
         label="Manager B"
         value="Manager B"
-        class="bg01"
+        borderColor="#CBCACA"
+        color="#D9D9D9"
       />
       <BaseCheckBox
         id="checkbox3"
         label="Worker A"
         value="Worker A"
-        class="bg02"
+        borderColor="#CBCACA"
+        color="#FFEBF8"
       />
       <BaseCheckBox
         id="checkbox4"
         label="Worker B"
         value="Worker B"
-        class="bg03"
+        borderColor="#CE86C0"
+        color="#E3BADB"
       />
       <BaseCheckBox
         id="checkbox5"
         label="Worker C"
         value="Worker C"
-        class="bg05"
+        borderColor="#A49ABD"
+        color="#ADA9BB"
       />
     </div>
     <div class="">

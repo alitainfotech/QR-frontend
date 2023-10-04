@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex customCheckBox">
+  <div class="d-flex customCheckBox" :style="bgColor">
       <div class="round">
         <input
           type="checkbox"
@@ -12,13 +12,17 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref,reactive } from "vue";
 
-const props = defineProps(["checked","label", "value","id"]);
+const props = defineProps(["checked","label", "value","id","color","borderColor"]);
+const bgColor = reactive({
+  background: props.color,
+  'border-color': props.borderColor
+})
 </script>
 <style scoped>
-.customCheckBox{ margin-bottom:14px; padding:9px 10px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius:4px; 
-border:1px solid transparent; width:100%;}
+.customCheckBox{ margin-bottom:14px; padding:9px 10px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius:4px;  
+border:1px solid transparent; width:100%; align-items:center ;}
 .bg01{ background:#D9D9D9; border-color:#CBCACA;}
 .bg02{ background:#FFEBF8; border-color:#F9DAEE;}
 .bg03{ background:#E3BADB; border-color:#CE86C0;}

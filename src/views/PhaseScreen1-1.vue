@@ -1,0 +1,7 @@
+<script setup>
+import SelectingProduct from "../components/phase/screen-1-1/Index.vue";
+</script>
+
+<template>
+  <SelectingProduct />
+</template>
