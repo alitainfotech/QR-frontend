@@ -1,6 +1,6 @@
 <template>
-  <v-card color="" flat rounded="0" class="pa-6">
-    <v-toolbar density="compact" color="white">
+  <v-card color="" flat rounded="0" class="pa-6 h-auto">
+    <v-toolbar density="compact" color="white" class="h-auto" >
       <BaseButton class="justify-center align-start">
         <template v-slot:icon>
           <div>
@@ -29,3 +29,7 @@
     </v-toolbar>
   </v-card>
 </template>
+
+<style>
+.v-toolbar__content{ height:auto !important ;}
+</style>

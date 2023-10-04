@@ -7,7 +7,7 @@
       SELECT THE SUB-PRODUCTS FOR WHICH <br />
       YOU WANT TO HANDLE FOR
     </div>
-    <div class="contentHeight mt-6">
+    <div class="contentHeight">
       <BaseCheckBox
         id="checkbox1"
         label="Manager A"
