@@ -75,107 +75,150 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
 }
 .text-28-bold {
   font-size: 28px;
   font-weight: bold;
+  line-height:32px;
 }
 .text-28-medium {
   font-size: 28px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:32px;
 }
 .text-28-normal {
   font-size: 28px;
   font-weight: 400;
+  line-height:32px;
 }
 
 .text-24-bold {
   font-size: 24px;
   font-weight: bold;
+  line-height:28px;
 }
 .text-24-medium {
   font-size: 24px;
   font-weight:500 ;
+  line-height:28px;
 }
 .text-24-normal {
   font-size: 24px;
   font-weight: 400;
+  line-height:28px;
 }
 
 .text-22-bold {
   font-size: 22px;
   font-weight: bold;
+  line-height:26px;
 }
 .text-22-medium {
   font-size: 22px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:26px;
 }
 .text-22-normal {
   font-size: 22px;
   font-weight: 400;
+  line-height:26px;
 }
 
 .text-20-bold {
   font-size: 20px;
   font-weight: bold;
+  line-height:24px;
 }
 .text-20-medium {
   font-size: 20px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:24px;
 }
 .text-20-normal {
   font-size: 20px;
   font-weight: 400;
+  line-height:24px;
 }
 
 .text-18-bold {
   font-size: 18px;
   font-weight: bold;
+  line-height:22px;
 }
 .text-18-medium {
   font-size: 18px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:22px;
 }
 .text-18-normal {
   font-size: 18px;
   font-weight: 400;
+  line-height:22px;
 }
 
 .text-16-bold {
   font-size: 16px;
   font-weight: bold;
+  line-height:20px;
 }
 .text-16-medium {
   font-size: 16px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:20px;
 }
 .text-16-normal {
   font-size: 16px;
   font-weight: 400;
+  line-height:20px;
 }
 
 .text-14-bold {
   font-size: 14px;
   font-weight: bold;
+  line-height:18px;
 }
 .text-14-medium {
   font-size: 14px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:18px;
 }
 .text-14-normal {
   font-size: 14px;
   font-weight: 400;
+  line-height:18px;
+}
+.text-13-bold {
+  font-size: 13px;
+  font-weight: bold;
+  line-height:18px;
+}
+.text-13-medium {
+  font-size: 13px;
+  font-weight:500;
+  line-height:18px;
+}
+.text-13-normal {
+  font-size: 13px;
+  font-weight:400;
+  line-height:18px;
 }
 
 .text-12-bold {
   font-size: 12px;
   font-weight: bold;
+  line-height:14px;
 }
 .text-12-medium {
   font-size: 12px;
-  font-weight:500 ;
+  font-weight:500;
+  line-height:14px;
 }
 .text-12-normal {
   font-size: 12px;
   font-weight: 400;
+  line-height:14px;
 }
+
+.bodyStyle{  padding:25px 30px; display:block; background:#ECECEC; border-radius:30px;}
+.contentHeight{ height:calc(100vh - 298px); overflow:auto; }

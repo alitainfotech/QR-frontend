@@ -3,11 +3,11 @@
     <p class="text-primary text-18-bold text-uppercase text-center mb-2">
       select sub-products
     </p>
-    <div class="text-secondary text-14-medium text-uppercase text-center">
+    <div class="text-primary-lighten-3 text-14-medium text-uppercase text-center">
       SELECT THE SUB-PRODUCTS FOR WHICH <br />
       YOU WANT TO HANDLE FOR
     </div>
-    <div class="mt-6">
+    <div class="contentHeight mt-6">
       <BaseCheckBox
         id="checkbox1"
         label="Manager A"
@@ -40,7 +40,7 @@
         class="bg05"
       />
     </div>
-    <div class="mt-14">
+    <div class="">
       <BaseSubmitButton
         size="x-large"
         color="primary"
@@ -56,3 +56,4 @@
   </div>
 </template>
 <script setup></script>
+

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="btnStyle">
     <v-btn
       block
       :rounded="rounded"
@@ -8,7 +8,7 @@
       :color="color"
     >
       <span :class="[fontColor, fontSize]">{{ text }}</span>
-      <div>
+      <div class="btnArrow">
         <v-icon :size="iconSize" class="text-22-normal">{{ icon }}</v-icon>
       </div>
     </v-btn>
@@ -30,3 +30,8 @@ const props = defineProps([
 ]);
 </script>
  
+ <style scoped>
+  .btnArrow:before{ content:''; background:url(src/assets/img/icons/chevron_right.svg) no-repeat center center; width:28px; height:28px; display:block; 
+  position:absolute; top:50%; right:10px; transform:translateY(-50%);}
+  .btnArrow i:before{ content:'';}
+ </style>

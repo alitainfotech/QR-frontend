@@ -4,12 +4,13 @@ import DefaultLayout from "./components/layout/default/index.vue";
 import Header from "./components/layout/header/index.vue";
 import Footer from "./components/layout/footer/index.vue";
 import SelectingUser from './components/admin/SelectingUser.vue'
+
 </script>
 <template>
   <v-app>
     <v-card variant="flat" max-width="375" width="100%" class="mx-auto">
       <Header />
-      <v-content class="bodyHeight">
+      <v-content class="bodyStyle">
         <SelectingUser/>
       </v-content>
       <Footer />
@@ -18,5 +19,5 @@ import SelectingUser from './components/admin/SelectingUser.vue'
 </template>
 
 <style scoped>
-.bodyHeight{ height:calc(100vh - 142px); padding:25px 30px; overflow: auto; display:block; background:#ECECEC; border-radius:30px;}
+
 </style>

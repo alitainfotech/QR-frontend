@@ -12,7 +12,7 @@
           </div>
         </template>
         <template v-slot:label>
-          <span>{{ footerNavigation.center }}</span>
+          <span class="pt-2 text-primary-lighten-5 text-13-medium">{{ footerNavigation.center }}</span>
         </template>
       </BaseButton>
 
@@ -27,7 +27,7 @@
           </div>
         </template>
         <template v-slot:label>
-          <span>{{ footerNavigation.designs }}</span>
+          <span class="pt-2 text-primary-lighten-5 text-13-medium">{{ footerNavigation.designs }}</span>
         </template>
       </BaseButton>
       <BaseButton class="justify-center align-center">
@@ -41,7 +41,7 @@
           </div>
         </template>
         <template v-slot:label>
-          <span> {{ footerNavigation.fit }}</span>
+          <span class="pt-2 text-primary-lighten-5 text-13-medium"> {{ footerNavigation.fit }}</span>
         </template>
       </BaseButton>
       <BaseButton class="justify-center align-center">
@@ -55,7 +55,7 @@
           </div>
         </template>
         <template v-slot:label>
-          <span> {{ footerNavigation.qc }}</span>
+          <span class="pt-2 text-primary-lighten-5 text-13-medium"> {{ footerNavigation.qc }}</span>
         </template>
       </BaseButton>
     </v-row>
