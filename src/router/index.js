@@ -14,6 +14,7 @@ import Phase1Screen2 from '../views/phase1/Screen2.vue'
 import Phase1Screen3 from '../views/phase1/Screen3.vue'
 import Phase1Screen4 from '../views/phase1/Screen4.vue'
 import Phase1Screen5 from '../views/phase1/Screen5.vue'
+import Phase1Screen6 from '../views/phase1/Screen6.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -91,6 +92,11 @@ const router = createRouter({
       path: '/phase-1-screen-5',
       name: 'phase-1-screen-5',
       component: Phase1Screen5
+    },
+    {
+      path: '/phase-1-screen-6',
+      name: 'phase-1-screen-6',
+      component: Phase1Screen6
     },
   ]
 })
