@@ -1,12 +1,12 @@
 <template>
-  <div class="btnStyle px-5" :style="styleObj">
+  <div class="px-5" :style="styleObj">
     <v-btn
       block
       :rounded="rounded"
       :size="size"
       :variant="variant"
       :color="color"
-      class="justify-start"
+      class="justify-start btnStyle"
     >
       <span :class="[fontColor, fontSize]">{{ text }}</span
       ><v-spacer></v-spacer>
@@ -52,5 +52,8 @@ const props = defineProps([
 
 .v-btn--size-x-large {
     padding: 0 30px !important;
+}
+.btnStyle{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 </style>
