@@ -15,121 +15,121 @@
     </div>
     <div class="contentHeight">
       <div class="pl-5 pr-5 pb-4">
-        <v-table class="rounded-lg">
+        <v-table class="rounded-lg" style="table-layout:fixed;">
           <tbody>
             <tr>
-              <td class="px-4 pt-3" >
+              <td style="vertical-align: top; width:46px">
                 <span class="text-secondary text-14-bold">01</span>
               </td>
-              <td class="table--col-border-left table-col-border-right">
+              <td class="table--col-border-left table-col-border-right" style="min-width:calc(100% - 104px);">
                 <span class="text-primary text-14-bold text-uppercase"
                   >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
                 >
               </td>
               <td class="hover-camera">
-                <BaseButton class="justify-center align-center">
+                <BaseCameraButton>
                   <template v-slot:icon>
                     <div>
                       <v-img
-                        :width="28"
-                        :aspect-ratio="28 / 20"
+                        :width="18"
+                        :aspect-ratio="18 / 14"
                         src="/src/assets/img/icons/camera.svg"
                       ></v-img>
                     </div>
                   </template>
-                </BaseButton>
+                </BaseCameraButton>
               </td>
             </tr>
             <tr>
-              <td class="px-4 pt-3" style="vertical-align: top">
+              <td class="px-4 pt-3" style="vertical-align: top;width:46px ">
                 <span class="text-secondary text-14-bold">02</span>
               </td>
-              <td class="table--col-border-left table-col-border-right">
+              <td class="table--col-border-left table-col-border-right" style="min-width:calc(100% - 104px);">
                 <span class="text-primary text-14-bold text-uppercase"
                   >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
                 >
               </td>
               <td class="hover-camera">
-                <BaseButton class="justify-center align-center">
+                <BaseCameraButton>
                   <template v-slot:icon>
                     <div>
                       <v-img
-                        :width="28"
-                        :aspect-ratio="28 / 20"
+                        :width="18"
+                        :aspect-ratio="18 / 14"
                         src="/src/assets/img/icons/camera.svg"
                       ></v-img>
                     </div>
                   </template>
-                </BaseButton>
+                </BaseCameraButton>
               </td>
             </tr>
             <tr>
-              <td class="px-4 pt-3" style="vertical-align: top">
+              <td class="px-4 pt-3" style="vertical-align: top;width:46px">
                 <span class="text-secondary text-14-bold">03</span>
               </td>
-              <td class="table--col-border-left table-col-border-right">
+              <td class="table--col-border-left table-col-border-right" style="min-width:calc(100% - 104px);">
                 <span class="text-primary text-14-bold text-uppercase"
                   >TEXT HERE TEXTHERE
                 </span>
               </td>
               <td class="hover-camera">
-                <BaseButton class="justify-center align-center">
+                <BaseCameraButton>
                   <template v-slot:icon>
                     <div>
                       <v-img
-                        :width="28"
-                        :aspect-ratio="28 / 20"
+                        :width="18"
+                        :aspect-ratio="18 / 14"
                         src="/src/assets/img/icons/camera.svg"
                       ></v-img>
                     </div>
                   </template>
-                </BaseButton>
+                </BaseCameraButton>
               </td>
             </tr>
             <tr>
-              <td class="px-4 pt-3" style="vertical-align: top">
+              <td class="px-4 pt-3" style="vertical-align: top;width:46px">
                 <span class="text-secondary text-14-bold">04</span>
               </td>
-              <td class="table--col-border-left table-col-border-right">
+              <td class="table--col-border-left table-col-border-right" style="min-width:calc(100% - 104px);">
                 <span class="text-primary text-14-bold text-uppercase"
                   >TEXT HERE TEXTHERE HERE TEXTHERE.</span
                 >
               </td>
               <td class="hover-camera">
-                <BaseButton class="justify-center align-center">
+                <BaseCameraButton>
                   <template v-slot:icon>
                     <div>
                       <v-img
-                        :width="28"
-                        :aspect-ratio="28 / 20"
+                        :width="18"
+                        :aspect-ratio="18 / 14"
                         src="/src/assets/img/icons/camera.svg"
                       ></v-img>
                     </div>
                   </template>
-                </BaseButton>
+                </BaseCameraButton>
               </td>
             </tr>
             <tr>
-              <td class="px-4 pt-3" style="vertical-align: top">
+              <td class="px-4 pt-3" style="vertical-align: top;width:46px">
                 <span class="text-secondary text-14-bold">05</span>
               </td>
-              <td class="table--col-border-left table-col-border-right">
+              <td class="table--col-border-left table-col-border-right" style="min-width:calc(100% - 104px);">
                 <span class="text-primary text-14-bold text-uppercase"
                   >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
                 >
               </td>
               <td class="hover-camera">
-                <BaseButton class="justify-center align-center">
+                <BaseCameraButton>
                   <template v-slot:icon>
                     <div>
                       <v-img
-                        :width="28"
-                        :aspect-ratio="28 / 20"
+                        :width="18"
+                        :aspect-ratio="18 / 14"
                         src="/src/assets/img/icons/camera.svg"
                       ></v-img>
                     </div>
                   </template>
-                </BaseButton>
+                </BaseCameraButton>
               </td>
             </tr>
           </tbody>
