@@ -222,3 +222,10 @@ body {
 
 .bodyStyle{  padding:25px 10px; display:block; background:#ECECEC; border-radius:30px;}
 .contentHeight{ height:calc(100vh - 334px); overflow:auto; margin:25px 0; }
+
+.table--col-border-left {
+  border-left: 1px solid #DBDBDB;
+}
+.table-col-border-right {
+  border-right: 1px solid #DBDBDB;
+}

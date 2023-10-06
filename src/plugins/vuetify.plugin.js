@@ -5,6 +5,7 @@ import '@mdi/font/css/materialdesignicons.css'
 const myCustomLightTheme = {
   dark: false,
   colors: {
+    bordercolor:"#DBDBDB",
     background: "#FFFFFF",
     surface: "#FFFFFF",
     primary: "#050336",
