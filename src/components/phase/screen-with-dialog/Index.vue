@@ -96,12 +96,14 @@
         Component(s) Stored
       </template>
       <template v-slot:content>
-        You have successfully entered these components into storage.
+        <p class="px-4">
+        You have successfully<br/> entered these components into storage.
+        </p>
       </template>
     </InfoDialog>
   </div>
 </template>
 <script setup>
-import InfoDialog from "../common/InfoDialog.vue";
+import InfoDialog from "../../common/InfoDialog.vue";
 import ProductCombination from "../common/ProductCombination.vue";
 </script>

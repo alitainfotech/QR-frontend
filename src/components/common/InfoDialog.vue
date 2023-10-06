@@ -10,7 +10,7 @@
         </div>
 
         <v-divider class="border-opacity-25" color="secondary"></v-divider>
-        <v-card-text class="px-8 py-9 text-center">
+        <v-card-text class="px-4 py-9 text-center">
           <span class="text-secondary text-18-medium"
             ><slot name="content"></slot></span
           >
