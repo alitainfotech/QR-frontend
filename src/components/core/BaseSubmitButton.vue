@@ -1,5 +1,5 @@
 <template>
-  <div class="btnStyle px-5">
+  <div class="btnStyle px-5" :style="styleObj">
     <v-btn
       block
       :rounded="rounded"
@@ -29,6 +29,7 @@ const props = defineProps([
   "fontSize",
   "fontColor",
   "iconSize",
+  "styleObj"
 ]);
 </script>
  
