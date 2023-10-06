@@ -8,6 +8,7 @@ const myCustomLightTheme = {
     bordercolor:"#DBDBDB",
     background: "#FFFFFF",
     surface: "#FFFFFF",
+    grayLight:"#ADA9BB",
     primary: "#050336",
     "primary-lighten-1": "#1E1C4A",
     "primary-lighten-2": "#37355E",

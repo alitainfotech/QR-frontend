@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-6">
+    <div class="px-3">
       <p class="text-primary text-18-bold text-uppercase text-center mb-2">
         PHASE 2.1 <br />
         QUALITY CONTROL CHECKPOINT
