@@ -23,9 +23,9 @@
             id="checkbox1"
             label="Jacket+Trousers+Waistcoat | 1356681"
             value="Jacket+Trousers+Waistcoat | 1356681"
-            color="#D9D9D9"
             borderColor="#CBCACA"
             checked="true"
+            class="bg-boxBG-1"
           />
         </template>
         <template v-slot:subProduct>
@@ -33,24 +33,24 @@
             id="checkbox2"
             label="JA Inner Lining | YC62101"
             value="JA Inner Lining | YC62101"
-            color="#D9D9D9"
             borderColor="#CBCACA"
+            class="bg-boxBG-1"
           />
           <BaseCheckBox
             id="checkbox2"
             label="WC Inner Lining | YC62101"
             value="WC Inner Lining | YC62101"
-            color="#D9D9D9"
             borderColor="#CBCACA"
             checked="true"
+            class="bg-boxBG-1"
           />
           <BaseCheckBox
             id="checkbox2"
             label="WC Outer Lining | YC62101"
             value="WC Outer Lining | YC62101"
-            color="#D9D9D9"
             borderColor="#CBCACA"
             checked="true"
+            class="bg-boxBG-1"
           />
         </template>
       </ProductCombination>

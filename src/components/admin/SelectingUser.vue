@@ -15,36 +15,36 @@
         label="Manager A"
         value="Manager A"
         borderColor="#CBCACA"
-        color="#D9D9D9"
         checked="true"
+        class="bg-boxBG-1"
       />
       <BaseCheckBox
         id="checkbox2"
         label="Manager B"
         value="Manager B"
         borderColor="#CBCACA"
-        color="#D9D9D9"
+        class="bg-boxBG-1"
       />
       <BaseCheckBox
         id="checkbox3"
         label="Worker A"
         value="Worker A"
         borderColor="#CBCACA"
-        color="#FFEBF8"
+        class="bg-boxBG-2"
       />
       <BaseCheckBox
         id="checkbox4"
         label="Worker B"
         value="Worker B"
         borderColor="#CE86C0"
-        color="#E3BADB"
+        class="bg-boxBG-3"
       />
       <BaseCheckBox
         id="checkbox5"
         label="Worker C"
         value="Worker C"
         borderColor="#A49ABD"
-        color="#ADA9BB"
+        class="bg-grayLight"
       />
     </div>
     <div class="">
