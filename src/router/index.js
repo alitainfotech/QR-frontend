@@ -21,6 +21,8 @@ import Phase2Screen3 from '../views/phase2/Screen3.vue'
 import Phase2Screen4 from '../views/phase2/Screen4.vue'
 import Phase2_1Screen1 from '../views/phase2-1/Screen1.vue'
 import Phase2_1Screen2 from '../views/phase2-1/Screen2.vue'
+import ipadScreen1 from '../views/ipad/Screen1.vue'
+import ipadScreen2 from '../views/ipad/Screen2.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -134,6 +136,16 @@ const router = createRouter({
       path: '/phase-2-1-screen-2',
       name: 'phase-2-1-screen-2',
       component: Phase2_1Screen2
+    },
+    {
+      path: '/ipad-screen-1',
+      name: 'ipad-screen-1',
+      component: ipadScreen1
+    },
+    {
+      path: '/ipad-screen-2',
+      name: 'ipad-screen-2',
+      component: ipadScreen2
     },
   ]
 })
