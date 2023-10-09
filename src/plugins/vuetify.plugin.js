@@ -1,24 +1,24 @@
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
-import '@mdi/font/css/materialdesignicons.css'
+import "@mdi/font/css/materialdesignicons.css";
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    'boxBG-1': "#D9D9D9",
-    'boxBG-2': "#FFEBF8",
-    'boxBG-3': "#E3BADB",
-    'boxBG-4': "#CE86C0",
-    'boxBG-5': "#AA9DEC",
-    'box-border-1': "#CBCACA",
-    'box-border-2': "#F9DAEE",
-    'box-border-3': "#CE86C0",
-    'box-border-4': "#CE86C0",
-    'box-border-5': "#AA9DEC",
-    bordercolor:"#DBDBDB",
+    "boxBG-1": "#D9D9D9",
+    "boxBG-2": "#FFEBF8",
+    "boxBG-3": "#E3BADB",
+    "boxBG-4": "#CE86C0",
+    "boxBG-5": "#AA9DEC",
+    "box-border-1": "#CBCACA",
+    "box-border-2": "#F9DAEE",
+    "box-border-3": "#CE86C0",
+    "box-border-4": "#CE86C0",
+    "box-border-5": "#AA9DEC",
+    bordercolor: "#DBDBDB",
     background: "#FFFFFF",
     surface: "#FFFFFF",
-    grayLight:"#ADA9BB",
+    grayLight: "#ADA9BB",
     primary: "#050336",
     "primary-lighten-1": "#1E1C4A",
     "primary-lighten-2": "#37355E",
@@ -59,6 +59,8 @@ const myCustomLightTheme = {
     "success-lighten-7": "#C2E0B3",
     "success-lighten-8": "#D6EBCC",
     "success-lighten-9": "#EBF5E5",
+    "success-lighten-10": "#6EB54A",
+    
     warning: "#F9B903",
     "warning-lighten-1": "#FAC01C",
     "warning-lighten-2": "#FAC735",
@@ -69,6 +71,7 @@ const myCustomLightTheme = {
     "warning-lighten-7": "#FDEAB3",
     "warning-lighten-8": "#FEF1CD",
     "warning-lighten-9": "#FEF8E6",
+    "warning-lighten-10": "#F8CB4C",
     error: "#E81313",
     "error-lighten-1": "#EA2B2B",
     "error-lighten-2": "#ED4242",
@@ -79,6 +82,8 @@ const myCustomLightTheme = {
     "error-lighten-7": "#F8B8B8",
     "error-lighten-8": "#EFEEF0",
     "error-lighten-9": "#FDE7E7",
+    "error-lighten-10": "#EC5757",
+    
     info: "#2196F3",
   },
 };

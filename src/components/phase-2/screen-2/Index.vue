@@ -21,32 +21,33 @@
         ></v-card>
       </div>
     </div>
-    <div class="mb-4">
+    <div class="d-flex justify-center px-5 mb-4">
       <BaseSubmitButton
+        block
         size="x-large"
         color="primary"
         text="PROCEED"
         icon="mdi-greater-than"
         variant="elevated"
-        rounded="xl"
-        fontSize="text-22-bold"
+        fontSize="text-20-bold"
         fontColor="text-white"
         iconSize="small"
       />
     </div>
-
-    <BaseSubmitButton
-      size="x-large"
-      color="primary"
-      text="return"
-      icon="mdi-greater-than"
-      variant="elevated"
-      rounded="xl"
-      fontSize="text-22-bold"
-      fontColor="text-white"
-      iconSize="small"
-      :styleObj="styleObj"
-    />
+    <div class="d-flex justify-center px-5">
+      <BaseSubmitButton
+        block
+        size="x-large"
+        color="primary"
+        text="return"
+        icon="mdi-greater-than"
+        variant="elevated"
+        fontSize="text-20-bold"
+        fontColor="text-white"
+        iconSize="small"
+        :styleObj="styleObj"
+      />
+    </div>
   </div>
 </template>
 <script setup>

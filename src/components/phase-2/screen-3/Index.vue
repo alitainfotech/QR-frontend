@@ -28,32 +28,35 @@
         </v-card>
       </div>
     </div>
-    <div class="mb-4">
-      <BaseSubmitButton
-        size="x-large"
-        color="warning"
-        text="shoot"
+     <div class="d-flex justify-center">
+       <BaseSubmitButton
+        color="primary"
+        text="save and return"
         icon="mdi-greater-than"
         variant="elevated"
-        rounded="xl"
-        fontSize="text-22-bold"
+        rounded="pill"
+        fontSize="text-20-bold"
         fontColor="text-white"
         iconSize="small"
+        :styleObj="styleObj"
+        class="mr-5"
       />
+      <BaseRoundedActionButton
+        class="bg-warning-lighten-10"
+        height="56px"
+        width="56px"
+      >
+        <template v-slot:icon>
+          <v-img
+            :width="27"
+            :aspect-ratio="27 / 20"
+            src="/src/assets/img/images/camera-image.svg"
+          />
+        </template>
+      </BaseRoundedActionButton>
+     
     </div>
-
-    <BaseSubmitButton
-      size="x-large"
-      color="primary"
-      text="save and return"
-      icon="mdi-greater-than"
-      variant="elevated"
-      rounded="xl"
-      fontSize="text-22-bold"
-      fontColor="text-white"
-      iconSize="small"
-      :styleObj="styleObj"
-    />
+    
   </div>
 </template>
 <script setup>

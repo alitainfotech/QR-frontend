@@ -78,17 +78,18 @@
         </ProductCombination>
       </div>
     </div>
-    <div class="">
+    <div class="d-flex justify-center px-5">
       <BaseSubmitButton
+        block
         size="x-large"
         color="primary"
         text="STORE COMPONENTS"
         icon="mdi-greater-than"
         variant="elevated"
-        rounded="xl"
-        fontSize="text-22-bold"
+        fontSize="text-20-bold"
         fontColor="text-white"
         iconSize="small"
+        class="px-2"
       />
     </div>
   </div>

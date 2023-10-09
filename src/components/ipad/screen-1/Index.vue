@@ -494,15 +494,15 @@
         </v-table>
       </div>
     </div>
-    <div class="">
+    <div class="d-flex justify-center px-10">
       <BaseSubmitButton
+        block
         size="x-large"
         color="primary"
         text="PROCEED"
         icon="mdi-greater-than"
         variant="elevated"
-        rounded="xl"
-        fontSize="text-22-bold"
+        fontSize="text-20-bold"
         fontColor="text-white"
         iconSize="small"
       />

@@ -17,7 +17,7 @@
           <v-flex xs6>
             <v-card
               width="150"
-              height="226"
+              height="350"
               variant="tonal"
               class="rounded-lg d-flex justify-center"
             >
@@ -34,7 +34,7 @@
           <v-flex xs6>
             <v-card
               width="150"
-              height="226"
+              height="350"
               variant="tonal"
               class="rounded-lg d-flex justify-center"
             >
@@ -51,49 +51,54 @@
       </div>
     </div>
     <v-container fluid>
-      <v-layout row class="pb-4 px-5">
-        <v-flex xs6>
-          <BaseAlertButton
-            size="x-large"
-            color="error-lighten-3"
-            text="fail"
-            icon="mdi-greater-than"
-            variant="elevated"
-            rounded="xl"
-            fontSize="text-22-bold"
-            fontColor="text-white"
-            iconSize="small"
-            :styleObj="styleAlertBtn"
-          /> </v-flex
-        ><v-spacer></v-spacer>
-        <v-flex xs6>
-          <BaseAlertButton
-            size="x-large"
-            color="success-lighten-3"
-            text="pass"
-            icon="mdi-greater-than"
-            variant="elevated"
-            rounded="xl"
-            fontSize="text-22-bold"
-            fontColor="text-white"
-            iconSize="small"
-            :styleObj="styleAlertBtn"
-          />
+      <v-layout row class="pb-4 justify-center">
+        <v-flex xs4 class="mr-7">
+          <BaseRoundedActionButton
+            class="bg-error-lighten-10"
+            height="56px"
+            width="56px"
+          >
+            <template v-slot:icon>
+              <v-img
+                :width="30"
+                :aspect-ratio="30 / 30"
+                src="/src/assets/img/images/close.svg"
+              />
+            </template>
+          </BaseRoundedActionButton> </v-flex
+        >
+        <v-flex xs4 class="mr-7">
+          <BaseRoundedActionButton
+            class="bg-warning-lighten-10"
+            height="56px"
+            width="56px"
+          >
+            <template v-slot:icon>
+              <v-img
+                :width="27"
+                :aspect-ratio="27 / 20"
+                src="/src/assets/img/images/camera-image.svg"
+              />
+            </template>
+          </BaseRoundedActionButton>
+        </v-flex>
+        <v-flex xs4>
+          <BaseRoundedActionButton
+            class="bg-success-lighten-10"
+            height="56px"
+            width="56px"
+          >
+            <template v-slot:icon>
+              <v-img
+                :width="30"
+                :aspect-ratio="30 / 30"
+                src="/src/assets/img/images/done_all.svg"
+              />
+            </template>
+          </BaseRoundedActionButton>
         </v-flex>
       </v-layout>
     </v-container>
-    <BaseSubmitButton
-      size="x-large"
-      color="primary"
-      text="save and return"
-      icon="mdi-greater-than"
-      variant="elevated"
-      rounded="xl"
-      fontSize="text-22-bold"
-      fontColor="text-white"
-      iconSize="small"
-      :styleObj="styleObj"
-    />
   </div>
 </template>
 <script setup>

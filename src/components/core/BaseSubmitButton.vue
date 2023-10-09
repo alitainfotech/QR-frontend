@@ -1,20 +1,19 @@
 <template>
-  <div class="px-5" :style="styleObj">
-    <v-btn
-      block
-      :rounded="rounded"
-      :size="size"
-      :variant="variant"
-      :color="color"
-      class="justify-start btnStyle"
-    >
-      <span :class="[fontColor, fontSize]">{{ text }}</span
-      ><v-spacer></v-spacer>
-      <div class="btnArrow">
-        <v-icon :size="iconSize" class="text-22-normal">{{ icon }}</v-icon>
-      </div>
-    </v-btn>
-  </div>
+  <v-btn
+    height="56"
+    rounded="pill"
+    :size="size"
+    :variant="variant"
+    :color="color"
+    class="justify-start btnStyle"
+    :style="styleObj"
+  >
+    <span :class="[fontColor, fontSize]">{{ text }}</span
+    ><v-spacer></v-spacer>
+    <div class="btnArrow">
+      <v-icon :size="iconSize" class="text-22-normal">{{ icon }}</v-icon>
+    </div>
+  </v-btn>
 </template>
 <script setup>
 import { ref } from "vue";
@@ -29,7 +28,7 @@ const props = defineProps([
   "fontSize",
   "fontColor",
   "iconSize",
-  "styleObj"
+  "styleObj",
 ]);
 </script>
  
@@ -51,9 +50,9 @@ const props = defineProps([
 }
 
 .v-btn--size-x-large {
-    padding: 0 30px !important;
+  padding: 0 30px !important;
 }
-.btnStyle{
+.btnStyle {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 </style>

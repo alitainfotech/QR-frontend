@@ -97,11 +97,11 @@ const router = createRouter({
       name: 'phase-1-screen-4',
       component: Phase1Screen4
     },
-    {
-      path: '/phase-1-screen-5',
-      name: 'phase-1-screen-5',
-      component: Phase1Screen5
-    },
+    // {
+    //   path: '/phase-1-screen-5',
+    //   name: 'phase-1-screen-5',
+    //   component: Phase1Screen5
+    // },
     {
       path: '/phase-1-screen-6',
       name: 'phase-1-screen-6',
