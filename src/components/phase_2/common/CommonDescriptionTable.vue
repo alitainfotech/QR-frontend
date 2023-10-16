@@ -7,7 +7,7 @@
             >{{item.title}}</span
           >
         </td>
-        <td style="width: 100px" class="border-col-left">
+        <td style="width: 100px; text-align: center;" class="border-col-left">
           <span class="text-primary text-18-bold text-uppercase">{{item.value}}</span>
         </td>
       </tr>
