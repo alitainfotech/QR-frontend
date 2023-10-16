@@ -8,6 +8,14 @@ export default {
         console.log(componentName);
         app.component(componentName, requireComponent[path].default);
       }
+      const requireCommonComponent = import.meta.glob("@/components/phase_2/common/*.vue", {
+        eager: true,
+      });
+      for (const path in requireCommonComponent) {
+        const componentName = path.split("/").at(-1).split(".")[0];
+        console.log(componentName);
+        app.component(componentName, requireCommonComponent[path].default);
+      }
     },
   };
   

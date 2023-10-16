@@ -5,6 +5,7 @@
     rounded="pill"
     size="x-large"
     variant="elevated"
+    elevation="4"
     color="primary"
     class="justify-center"
   >

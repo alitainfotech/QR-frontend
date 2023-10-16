@@ -2,6 +2,7 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import "@mdi/font/css/materialdesignicons.css";
+
 const myCustomLightTheme = {
   dark: false,
   colors: {
@@ -15,6 +16,7 @@ const myCustomLightTheme = {
     "box-border-3": "#CE86C0",
     "box-border-4": "#A49ABD",
     "box-border-5": "#AA9DEC",
+    "rowBG":"#F3F3F3",
     bordercolor: "#DBDBDB",
     background: "#FFFFFF",
     surface: "#FFFFFF",
