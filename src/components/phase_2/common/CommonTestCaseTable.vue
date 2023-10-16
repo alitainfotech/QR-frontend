@@ -50,7 +50,7 @@ const props = defineProps(["items"]);
 </script>
 <style>
 .test-case-table.v-table > .v-table__wrapper > table > tbody > tr > td {
-  padding: 8px 10px !important;
+  padding: 4px 10px !important;
 }
 .test-case-table .v-table--density-default > .v-table__wrapper > table > tbody > tr > td {
   height: 0px !important;
@@ -76,5 +76,8 @@ const props = defineProps(["items"]);
 .test-case-table .v-selection-control__input {
   height: 16px !important;
   width: 16px !important;
+}
+.test-case-table.v-table--density-default > .v-table__wrapper > table > tbody > tr > td{
+  height: 0px !important;
 }
 </style>
