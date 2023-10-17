@@ -1,15 +1,21 @@
 <template>
   <div>
     <BaseTitle>
-      <template v-slot:text> HAND-FINISHING OUTBOUND | <br/>3.5.1 </template>
+      <template v-slot:text> PRESSING IN-PROGRESS | 4.1 </template>
     </BaseTitle>
+    <BaseSubtitle class="mb-5">
+      <template v-slot:text>THIS GARMENT IS BEING PRESSED </template>
+    </BaseSubtitle>
 
-    <div class="px-5 mb-10">
+    <div class="px-5 mb-10">      
       <BaseNumberButton text="01372" />
     </div>
 
     <div class="contentHeight">     
       <div class="px-5">
+        <BaseSubtitle class="mb-5">
+          <template v-slot:text>YOU NEED TO COMPLETE PRESSING  <br/> FOR THE GARMENTS AS FOLLOWS: </template>
+        </BaseSubtitle>
         <CommonDescriptionTable :items="data"/>
       </div>
     </div>
@@ -19,7 +25,7 @@
         block
         size="x-large"
         color="primary"
-        text="COMPLETE | 3.5.3"
+        text="FINISH PRESSING | 4.2"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -34,40 +40,16 @@
 import { ref } from "vue";
 const data = ref([
   {
-    title: "Order #",
-    value: "01338",
+    title: "Jacket",
+    value: "7 Mins",
   },
   {
-    title: "Factory",
-    value: "B",
+    title: "Trousers",
+    value: "3 Mins",
   },
   {
-    title: "Start Date",
-    value: "07-09-023",
-  },
-  {
-    title: "Due Date",
-    value: "21-09-23",
-  },
-  {
-    title: "Arrival Date",
-    value: "22-09-23",
-  },
-  {
-    title: "Factory",
-    value: "3.5",
-  },
-  {
-    title: "Start Date",
-    value: "23-09-23",
-  },
-  {
-    title: "Due Date",
-    value: "24-09-23",
-  },  
-  {
-    title: "Arrival Date",
-    value: "",
+    title: "Waistcoat",
+    value: "3 Mins",
   },  
 ]);
 const items = ref([

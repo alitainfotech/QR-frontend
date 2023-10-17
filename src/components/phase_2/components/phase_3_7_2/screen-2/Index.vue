@@ -1,31 +1,29 @@
 <template>
-  <div>screen-3-7-1-9
+  <div>
     <BaseTitle>
-      <template v-slot:text> SUMMARY | XXXX </template>
+      <template v-slot:text> HAND-FINISHING QUALITY  <br/>CONTROL CHECK| 3.5.5 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> SUMMARY OF PHASES 1 2 & 3 </template>
+      <template v-slot:text> TAKE A LOOK AT THE LOCATION OF WHICH  <br/> YOU NEED TO CAPTURE</template>
     </BaseSubtitle>
-
-    <div class="px-5 mb-10">
-      <BaseNumberButton text="01372" />
-    </div>
-
     <div class="contentHeight">
-      <div class="px-5">
-        <CommonTestCaseTable :items="data" />
-        <div class="px-10 mt-5" style="opacity: 0.5">
-          <BaseExportButton class="bg-primary" btnText="export" />
-        </div>
+      <div class="pl-5 pr-5 pb-4">
+        <v-card
+          width="315"
+          height="287"
+          variant="tonal"
+          class="rounded-lg"
+        ></v-card>
       </div>
     </div>
-    <v-divider :thickness="3" color="primary" class="mb-6"></v-divider>
+    
+    <!-- <v-divider :thickness="3" color="primary" class="mb-6"></v-divider> -->
     <div class="d-flex justify-center px-5 mb-3">
       <BaseSubmitButton
         block
         size="x-large"
         color="primary"
-        text="GARMENT PRESSING | 4.0"
+        text="PROCEED"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -39,7 +37,7 @@
         block
         size="x-large"
         color="primary-lighten-3"
-        text="HAND-FINISHING | 3.5"
+        text="SAVE AND RETURN"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"

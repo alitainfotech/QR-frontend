@@ -1,10 +1,10 @@
 <template>
   <div>
     <BaseTitle>
-      <template v-slot:text> HAND-FINISHING OUTBOUND | 3.5.1 </template>
+      <template v-slot:text> HAND-FINISHING SUMMARY |  <br/> 3.5.6 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text>PREPARE THE GARMENT FOR OUTBOUND SHIPMENT</template>
+      <template v-slot:text> REVIEW THE CHECKS FOR THE PREVIOUS STEPS  <br/> AND REPORT ISSUES IF NECESSARY </template>
     </BaseSubtitle>
 
     <div class="px-5 mb-10">
@@ -12,21 +12,20 @@
     </div>
 
     <div class="contentHeight">
-      <div class="px-5 mb-5">        
-        <BaseSelect placeholderText="Choose The Factory" :items="items" class="mb-4"/>
-        <BaseCalendar placeholderText="Enter The Start Date" class="mb-4"/>
-        <BaseCalendar placeholderText="Enter The Completion Date"/>
-      </div>
       <div class="px-5">
-        <CommonDescriptionTable :items="data"/>
+        <CommonTestCaseTable :items="data" />        
       </div>
-    </div>    
+      <div class="px-5 mt-5">
+        <CommonDescriptionTable :items="dataTables"/>
+      </div>
+    </div>
+    
     <div class="d-flex justify-center px-5 mb-3">
       <BaseSubmitButton
         block
         size="x-large"
         color="primary"
-        text="SHIP | 3.5.2"
+        text="GARMENT PRESSING | 4.0"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -40,14 +39,41 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import InfoDialog from "../../../../common/InfoDialog.vue";
 const data = ref([
+  {
+    title: "Phase 1",
+    pass: "3/3",
+    fail: "0/3",
+  },
+  {
+    title: "Phase 2",
+    pass: "14/15",
+    fail: "1/15",
+  },
+  {
+    title: "Phase 3",
+    pass: "14/15",
+    fail: "1/15",
+  },
+  {
+    title: "All Reports",
+    pass: "17/18",
+    fail: "2/18",
+  },
+]);
+const dataTables = ref([
   {
     title: "Order #",
     value: "01338",
   },
   {
+    title: "Factory",
+    value: "B",
+  },
+  {
     title: "Start Date",
-    value: "07-09-023",
+    value: "27-09-23",
   },
   {
     title: "Due Date",
@@ -59,8 +85,12 @@ const data = ref([
   },
   {
     title: "Factory",
-    value: "B",
+    value: "3.5",
   },
+  {
+    title: "Start Date",
+    value: "23-09-23",
+  }  
 ]);
 const items = ref([
   "California",

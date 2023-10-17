@@ -1,14 +1,16 @@
 <template>
   <div>
     <BaseTitle>
-      <template v-slot:text> HAND-FINISHING <br/>DESIGNS CHECK | 3.5.4 </template>
+      <template v-slot:text> HAND-FINISHING QUALITY <br/>CONTROL CHECK| 3.5.5 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> SHOOT THE &lt;ENTER DESIGN NAME&gt; </template>
+      <template v-slot:text> NOW LOCATE THE LOCATION <br/> ON THE PRODUCT AND SHOOT IT CLEARLY </template>
     </BaseSubtitle>
-    <div class="cameraView">
-      <div class="">
+    <div class="contentHeight">
+      <div class="px-5">
         <v-card          
+          width="100%"
+          height="382px"
           variant="tonal"
           class="d-flex justify-center"
         >

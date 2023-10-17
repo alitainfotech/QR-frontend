@@ -1,10 +1,10 @@
 <template>
   <div>
     <BaseTitle>
-      <template v-slot:text> HAND-FINISHING <br/>DESIGNS CHECK | 3.5.4 </template>
+      <template v-slot:text> HAND-FINISHING QUALITY <br/>CONTROL CHECK| 3.5.5 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> DOES B EXACTLY MATCH A? </template>
+      <template v-slot:text>PASS OR FAIL </template>
     </BaseSubtitle>
     <div class="contentHeight">
       <div class="pl-5 pr-5 pb-4">
@@ -18,7 +18,11 @@
               class="rounded-lg d-flex justify-center"
             >
               <v-card-item class="justify-center item-center">
-              
+                <v-img
+                  :width="67"
+                  :aspect-ratio="67 / 50"
+                  src="/src/assets/img/images/camera-image.svg"
+                ></v-img>
               </v-card-item>
             </v-card>
           </v-flex>
@@ -32,7 +36,11 @@
               class="rounded-lg d-flex justify-center"
             >
               <v-card-item class="justify-center item-center">
-               
+                <v-img
+                  :width="67"
+                  :aspect-ratio="67 / 50"
+                  src="/src/assets/img/images/camera-image.svg"
+                ></v-img>
               </v-card-item>
             </v-card>
           </v-flex>
@@ -56,7 +64,21 @@
             </template>
           </BaseRoundedActionButton> </v-flex
         >
-        
+        <v-flex xs4 class="mr-7">
+          <BaseRoundedActionButton
+            class="bg-warning-lighten-10"
+            height="56px"
+            width="56px"
+          >
+            <template v-slot:icon>
+              <v-img
+                :width="27"
+                :aspect-ratio="27 / 20"
+                src="/src/assets/img/images/camera-image.svg"
+              />
+            </template>
+          </BaseRoundedActionButton>
+        </v-flex>
         <v-flex xs4>
           <BaseRoundedActionButton
             class="bg-success-lighten-10"
@@ -74,20 +96,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <div class="d-flex justify-center px-5 mb-3">
-      <BaseSubmitButton
-        block
-        size="x-large"
-        color="primary-lighten-3"
-        text="SAVE AND RETURN"
-        icon="mdi-greater-than"
-        variant="elevated"
-        fontSize="text-16-bold"
-        fontColor="text-white"
-        iconSize="small"
-        class="px-2"
-      />
-    </div>
   </div>
 </template>
 <script setup>

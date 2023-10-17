@@ -167,7 +167,7 @@
 </template>
 <script setup>
 </script>
-<style scoped>
+<style>
 .v-table > .v-table__wrapper > table > tbody > tr > td {
   padding: 10px 15px 10px 15px !important;
 }
