@@ -11,9 +11,9 @@
       <BaseNumberButton text="01372" />
     </div>
 
-    <div class="contentHeight">     
+    <div class="contentHeight">
       <div class="px-5">
-        <CommonDescriptionTable :items="data"/>
+        <CommonDescriptionTable :items="data" />
       </div>
     </div>
 
@@ -45,17 +45,67 @@
         class="px-2"
       />
     </div>
-    
-    <InfoDialog>
-      <template v-slot:title>
-        Extract Garment
-      </template>
+    <CommonInputDialog>
+      <template v-slot:title> Extract Garment </template>
       <template v-slot:content>
-        <p class="px-4">
-          Why are you extracting this garment on its own from storage?
-        </p>
+        <div class="pa-4">
+          <p class="pt-5 text-18-medium text-secondary text-center">
+            Why are you extracting this garment on its own from storage?
+          </p>
+          <div class="py-5">
+            <BaseDialogCheckBox
+              checked="true"
+              id="checkbox5"
+              label="Reason 1"
+              value="Reason 1"
+              borderColor="#050336"
+              class="bg-primary"
+              textColor="text-white"
+            />
+            <BaseDialogCheckBox
+              
+              id="checkbox5"
+              label="Reason 2"
+              value="Reason 2"
+              borderColor="#E4E3E7"
+              class="bg-white"
+              textColor="text-primary"
+            />
+             <BaseDialogCheckBox
+              
+              id="checkbox5"
+              label="Reason 3"
+              value="Reason 3"
+              borderColor="#E4E3E7"
+              class="bg-white"
+              textColor="text-primary"
+            />
+             <BaseDialogCheckBox
+              
+              id="checkbox5"
+              label="Reason 4"
+              value="Reason 4"
+              borderColor="#E4E3E7"
+              class="bg-white"
+              textColor="text-primary"
+            />
+             <BaseDialogCheckBox
+              
+              id="checkbox5"
+              label="Other"
+              value="Other"
+              borderColor="#E4E3E7"
+              class="bg-white"
+              textColor="text-primary"
+            />
+          </div>
+        </div>
       </template>
-    </InfoDialog>
+      <template v-slot:footer>
+        <BaseOutlineButton btnText="Go Back" color="primary-lighten-3" />
+        <BaseFlatButton btnText="Continue" color="primary" />
+      </template>
+    </CommonInputDialog>
   </div>
 </template>
 <script setup>
@@ -93,11 +143,11 @@ const data = ref([
   {
     title: "Due Date",
     value: "24-09-23",
-  },  
+  },
   {
     title: "Arrival Date",
     value: "24-09-23",
-  },  
+  },
 ]);
 const items = ref([
   "California",

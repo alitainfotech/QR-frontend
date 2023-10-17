@@ -51,7 +51,7 @@
         Insertion Completed!
       </template>
       <template v-slot:content>
-        <p class="px-4">
+        <p class="">
           Your selected garments have been inserted into storage successfully.
         </p>
       </template>
