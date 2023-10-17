@@ -7,7 +7,7 @@
     :color="color"
     rounded="xl"
     @click="dialog = false"
-    ><span class="text-18-bold">{{btnText}}</span></v-btn
+    ><span class="text-18-bold text-capitalize">{{btnText}}</span></v-btn
   >
 </template>
 <script setup>

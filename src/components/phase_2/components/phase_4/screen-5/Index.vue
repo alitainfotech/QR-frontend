@@ -1,7 +1,9 @@
 <template>
   <div>
     <BaseTitle>
-      <template v-slot:text> HAND-FINISHING QUALITY <br/>CONTROL CHECK| 3.5.5 </template>
+      <template v-slot:text>
+        HAND-FINISHING QUALITY <br />CONTROL CHECK| 3.5.5
+      </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
       <template v-slot:text>PASS OR FAIL </template>
@@ -10,7 +12,9 @@
       <div class="pl-5 pr-5 pb-4">
         <v-layout row>
           <v-flex xs6>
-            <p class="text-primary text-22-bold text-uppercase text-center">A</p>
+            <p class="text-primary text-22-bold text-uppercase text-center">
+              A
+            </p>
             <v-card
               width="150"
               height="350"
@@ -28,7 +32,9 @@
           </v-flex>
           <v-spacer></v-spacer>
           <v-flex xs6>
-            <p class="text-primary text-22-bold text-uppercase text-center">B</p>
+            <p class="text-primary text-22-bold text-uppercase text-center">
+              B
+            </p>
             <v-card
               width="150"
               height="350"
@@ -62,8 +68,8 @@
                 src="/src/assets/img/images/close.svg"
               />
             </template>
-          </BaseRoundedActionButton> </v-flex
-        >
+          </BaseRoundedActionButton>
+        </v-flex>
         <v-flex xs4 class="mr-7">
           <BaseRoundedActionButton
             class="bg-warning-lighten-10"
@@ -96,8 +102,43 @@
         </v-flex>
       </v-layout>
     </v-container>
-    
-    <InfoDialog>
+    <CommonInputDialog>
+      <template v-slot:title> Resolution Center </template>
+      <template v-slot:content>
+        <div class="pa-4">
+          <p class="pt-5 text-18-medium text-secondary text-center">
+            Please choose from the <br />
+            below options:
+          </p>
+          <div class="py-2">
+            <BaseDialogCheckBox
+             checked="true"
+              id="checkbox5"
+              label="Add Delay"
+              value="Add Delay"
+              borderColor="#050336"
+              class="bg-primary"
+              textColor="text-white"
+
+            />
+            <BaseDialogCheckBox
+             checked="true"
+              id="checkbox5"
+              label="Raise Issue"
+              value="Raise Issue"
+              borderColor="#E4E3E7"
+              class="bg-white"
+              textColor="text-primary"
+
+            />
+          </div>
+        </div>
+      </template>
+      <template v-slot:footer>
+        <BaseFlatButton btnText="continue" color="primary" />
+      </template>
+    </CommonInputDialog>
+    <!-- <InfoDialog>
       <template v-slot:title>
         Resolution Center
       </template>
@@ -106,8 +147,7 @@
           Please choose from the <br/> below options:
         </p>
       </template>
-    </InfoDialog>
-
+    </InfoDialog> -->
   </div>
 </template>
 <script setup>
