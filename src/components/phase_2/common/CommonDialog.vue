@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-dialog v-model="dialog" width="auto">
+    <v-dialog v-model="dialog" width="327">
       <v-card>
         <div>
           <v-icon class="close-icon" size="small" color="secondary">mdi-close</v-icon>
