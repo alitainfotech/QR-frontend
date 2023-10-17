@@ -4,7 +4,10 @@
       <template v-slot:text> GARMENT STORAGE </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> INSERTING GARMENTS INTO INTERNATIONAL  <br/> STORAGE </template>
+      <template v-slot:text>
+        INSERTING GARMENTS INTO INTERNATIONAL <br />
+        STORAGE
+      </template>
     </BaseSubtitle>
 
     <div class="px-5 mb-10">
@@ -23,7 +26,7 @@
           borderColor="#CBCACA"
           checked="true"
           class="bg-boxBG-1"
-        />       
+        />
         <BaseCheckBox
           id="checkbox3"
           label="Trousers | 1356681 | Phase 5.0 | 5 PCS"
@@ -37,11 +40,13 @@
           value="Overcoat | 9924 | Phase 1.1 | 5 PCS"
           borderColor="#CE86C0"
           class="bg-boxBG-3"
-        />      
+        />
       </div>
-      <StorageCard>
+      <CommonStorageCard>
         <template v-slot:title>
-          <div class="text-primary text-capitalize">Currently In-Storage (6.1)</div>          
+          <div class="text-primary text-capitalize">
+            Currently In-Storage (6.1)
+          </div>
         </template>
         <template v-slot:productCombination>
           <ProductCombination>
@@ -62,9 +67,11 @@
               />
             </template>
           </ProductCombination>
-          <CommonDescriptionTable class="mt-3" :items="tblData"/>
-        </template>        
-      </StorageCard>
+        </template>
+        <template v-slot:descriptionTable>
+          <CommonDescriptionTable class="mt-8" :items="tblData" />
+        </template>
+      </CommonStorageCard>
     </div>
     <!-- <v-divider :thickness="3" color="primary" class="mb-6"></v-divider> -->
     <div class="d-flex justify-center px-5 mb-3">
@@ -99,7 +106,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import StorageCard from "../../../../phase/common/StorageCard.vue";
+
 import ProductCombination from "../../../../phase/common/ProductCombination.vue";
 
 const tblData = ref([
