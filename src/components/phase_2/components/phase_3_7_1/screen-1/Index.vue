@@ -1,45 +1,24 @@
 <template>
-  <div>screen-3-7-1-1
+  <div>
     <BaseTitle>
-      <template v-slot:text> SUMMARY | XXXX </template>
+      <template v-slot:text> HAND-FINISHING INBOUND <br/> |3.5.3 </template>
     </BaseTitle>
-    <BaseSubtitle class="mb-5">
-      <template v-slot:text> SUMMARY OF PHASES 1 2 & 3 </template>
-    </BaseSubtitle>
-
     <div class="px-5 mb-10">
       <BaseNumberButton text="01372" />
     </div>
 
-    <div class="contentHeight">
+    <div class="contentHeight">     
       <div class="px-5">
-        <CommonTestCaseTable :items="data" />
-        <div class="px-10 mt-5" style="opacity: 0.5">
-          <BaseExportButton class="bg-primary" btnText="export" />
-        </div>
+        <CommonDescriptionTable :items="data"/>
       </div>
     </div>
-    <v-divider :thickness="3" color="primary" class="mb-6"></v-divider>
+    <!-- <v-divider :thickness="3" color="primary" class="mb-6"></v-divider> -->
     <div class="d-flex justify-center px-5 mb-3">
       <BaseSubmitButton
         block
         size="x-large"
         color="primary"
-        text="GARMENT PRESSING | 4.0"
-        icon="mdi-greater-than"
-        variant="elevated"
-        fontSize="text-16-bold"
-        fontColor="text-white"
-        iconSize="small"
-        class="px-2"
-      />
-    </div>
-    <div class="d-flex justify-center px-5 mb-3">
-      <BaseSubmitButton
-        block
-        size="x-large"
-        color="primary-lighten-3"
-        text="HAND-FINISHING | 3.5"
+        text="DESIGN CHECK | 3.5.4"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -54,24 +33,48 @@
 import { ref } from "vue";
 const data = ref([
   {
-    title: "Phase 1",
-    pass: "15/15",
-    fail: "0/15",
+    title: "Order #",
+    value: "01338",
   },
   {
-    title: "Phase 2",
-    pass: "14/15",
-    fail: "1/15",
+    title: "Factory",
+    value: "B",
   },
   {
-    title: "Phase 3",
-    pass: "14/15",
-    fail: "1/15",
+    title: "Start Date",
+    value: "07-09-023",
   },
   {
-    title: "All Reports",
-    pass: "13/15",
-    fail: "2/15",
+    title: "Due Date",
+    value: "21-09-23",
   },
+  {
+    title: "Arrival Date",
+    value: "22-09-23",
+  },
+  {
+    title: "Factory",
+    value: "3.5",
+  },
+  {
+    title: "Start Date",
+    value: "23-09-23",
+  },
+  {
+    title: "Due Date",
+    value: "24-09-23",
+  },  
+  {
+    title: "Arrival Date",
+    value: "27-09-23",
+  },  
+]);
+const items = ref([
+  "California",
+  "Colorado",
+  "Florida",
+  "Georgia",
+  "Texas",
+  "Wyoming",
 ]);
 </script>

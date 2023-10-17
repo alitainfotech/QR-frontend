@@ -1,5 +1,5 @@
 <template>
-  <div>screen-3-6-3
+  <div>
     <BaseTitle>
       <template v-slot:text> SUMMARY | XXXX </template>
     </BaseTitle>
@@ -48,10 +48,23 @@
         class="px-2"
       />
     </div>
+
+    <InfoDialog>
+      <template v-slot:title>
+        Passcode to Continue
+      </template>
+      <template v-slot:content>
+        <p class="px-4">
+          Please enter a system passcode in<br/> order to continue.
+        </p>
+      </template>
+    </InfoDialog>
+    
   </div>
 </template>
 <script setup>
 import { ref } from "vue";
+import InfoDialog from "../../../../common/InfoDialog.vue";
 const data = ref([
   {
     title: "Phase 1",

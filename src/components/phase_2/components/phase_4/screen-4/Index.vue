@@ -1,31 +1,31 @@
 <template>
-  <div>screen-3-6-15
+  <div>
     <BaseTitle>
-      <template v-slot:text> SUMMARY | XXXX </template>
+      <template v-slot:text> PRESSING FINISHED | 4.2 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> SUMMARY OF PHASES 1 2 & 3 </template>
+      <template v-slot:text>THIS GARMENT IS NOW FINISHED PRESSED</template>
     </BaseSubtitle>
 
-    <div class="px-5 mb-10">
+    <div class="px-5 mb-10">      
       <BaseNumberButton text="01372" />
     </div>
 
-    <div class="contentHeight">
+    <div class="contentHeight">     
       <div class="px-5">
-        <CommonTestCaseTable :items="data" />
-        <div class="px-10 mt-5" style="opacity: 0.5">
-          <BaseExportButton class="bg-primary" btnText="export" />
-        </div>
+        <BaseSubtitle class="mb-5">
+          <template v-slot:text>YOU NEED TO COMPLETE PRESSING  <br/> FOR THE GARMENTS AS FOLLOWS: </template>
+        </BaseSubtitle>
+        <CommonDescriptionTable :items="data"/>
       </div>
     </div>
-    <v-divider :thickness="3" color="primary" class="mb-6"></v-divider>
+
     <div class="d-flex justify-center px-5 mb-3">
       <BaseSubmitButton
         block
         size="x-large"
         color="primary"
-        text="GARMENT PRESSING | 4.0"
+        text="PHOTO STUDIO | 5.0"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -39,7 +39,7 @@
         block
         size="x-large"
         color="primary-lighten-3"
-        text="HAND-FINISHING | 3.5"
+        text="INSERT TO STORAGE | 6.0"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"
@@ -54,24 +54,16 @@
 import { ref } from "vue";
 const data = ref([
   {
-    title: "Phase 1",
-    pass: "15/15",
-    fail: "0/15",
-  },
-  {
-    title: "Phase 2",
-    pass: "14/15",
-    fail: "1/15",
-  },
-  {
-    title: "Phase 3",
-    pass: "14/15",
-    fail: "1/15",
-  },
-  {
-    title: "All Reports",
-    pass: "13/15",
-    fail: "2/15",
-  },
+    title: "TOTAL TIME",
+    value: "17 Mins",
+  },  
+]);
+const items = ref([
+  "California",
+  "Colorado",
+  "Florida",
+  "Georgia",
+  "Texas",
+  "Wyoming",
 ]);
 </script>

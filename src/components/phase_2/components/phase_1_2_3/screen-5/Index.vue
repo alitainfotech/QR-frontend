@@ -1,46 +1,306 @@
 <template>
-  <div>screen-5
+  <div>
     <BaseTitle>
-      <template v-slot:text> SUMMARY | XXXX </template>
+      <template v-slot:text> Order Report </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> SUMMARY OF PHASES 1 2 & 3 </template>
+      <template v-slot:text>PHASE 2 | STYLE DESIGNS CHECK </template>
     </BaseSubtitle>
 
-    <div class="px-5 mb-10">
-      <BaseNumberButton text="01372" />
-    </div>
-
     <div class="contentHeight">
-      <div class="px-5">
-        <CommonTestCaseTable :items="data" />
-        <div class="px-10 my-7" style="opacity: 0.5">
-          <BaseExportButton class="bg-primary" btnText="export" />
-        </div>
-       <CommonDescriptionTable :items="tblData"/>
+      <div class="pl-5 pr-5 pb-10">
+        <v-table class="rounded-lg" style="table-layout: fixed">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">01</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img                        
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">02</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">03</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE
+                </span>
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">04</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE HERE TEXTHERE.</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">05</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+          </tbody>
+        </v-table>
+      </div>
+      <div class="pl-5 pr-5">
+        <BaseSubtitle class="mb-2">
+          <template v-slot:text>PHASE 3 | STYLE DESIGNS CHECK  </template>
+        </BaseSubtitle>
+        <v-table class="rounded-lg" style="table-layout: fixed">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">01</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img                        
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">02</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">03</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE
+                </span>
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">04</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE HERE TEXTHERE.</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">05</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+          </tbody>
+        </v-table>
       </div>
     </div>
-    <v-divider :thickness="3" color="primary" class="mb-6"></v-divider>
+    <!-- <v-divider :thickness="3" color="primary" class="mb-6"></v-divider> -->
     <div class="d-flex justify-center px-5 mb-3">
       <BaseSubmitButton
         block
         size="x-large"
         color="primary"
-        text="GARMENT PRESSING | 4.0"
-        icon="mdi-greater-than"
-        variant="elevated"
-        fontSize="text-16-bold"
-        fontColor="text-white"
-        iconSize="small"
-        class="px-2"
-      />
-    </div>
-    <div class="d-flex justify-center px-5 mb-3">
-      <BaseSubmitButton
-        block
-        size="x-large"
-        color="primary-lighten-3"
-        text="HAND-FINISHING | 3.5"
+        text="SHARE PHASE 2 & 3 REPORTS"
         icon="mdi-greater-than"
         variant="elevated"
         fontSize="text-16-bold"

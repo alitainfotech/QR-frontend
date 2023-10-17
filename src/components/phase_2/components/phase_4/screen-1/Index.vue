@@ -15,16 +15,16 @@
       <div class="px-5">
         <BaseCheckBox
           id="checkbox1"
-          label="JACKET | 1356681 | Phase 3.1.5"
-          value="JACKET | 1356681 | Phase 3.1.5"
+          label="JACKET | 1356681 | Phase 4.0"
+          value="JACKET | 1356681 | Phase 4.0"
           borderColor="#CBCACA"
           checked="true"
           class="bg-boxBG-1"
         />
         <BaseCheckBox
           id="checkbox2"
-          label="TROUSERS | 1356681 | Phase 7.0"
-          value="TROUSERS | 1356681 | Phase 7.0"
+          label="TROUSERS | 1356681 | Phase 4.0"
+          value="TROUSERS | 1356681 | Phase 4.0"
           borderColor="#CBCACA"
           class="bg-boxBG-1"
         />
