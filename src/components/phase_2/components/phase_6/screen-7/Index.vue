@@ -45,17 +45,21 @@
         class="px-2"
       />
     </div>
-    
-    <InfoDialog>
+    <CommonDialog>
       <template v-slot:title>
         Are you Sure?
       </template>
       <template v-slot:content>
-        <p class="px-4">
-          You are not shipping all the garments in this order.  <br/><br/>Are your sure you want to do this?
+        <p class="">
+           You are not shipping all the garments in this order.  <br/><br/>Are your sure you want to do this?
         </p>
       </template>
-    </InfoDialog>
+      <template v-slot:footer>
+        <BaseOutlineButton btnText="Go Back" color="primary-lighten-3"/>
+        <BaseFlatButton btnText="PROCEED" color="primary"/>
+      </template>
+    </CommonDialog>
+    
   </div>
 </template>
 <script setup>
