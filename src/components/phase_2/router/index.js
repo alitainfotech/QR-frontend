@@ -28,6 +28,11 @@ import Phase3_7_1Screen12 from '../views/phase_3_7_1/Screen12.vue'
 import Phase3_7_1Screen13 from '../views/phase_3_7_1/Screen13.vue'
 import Phase3_7_1Screen14 from '../views/phase_3_7_1/Screen14.vue'
 import Phase3_7_1Screen15 from '../views/phase_3_7_1/Screen15.vue'
+import Phase9_Screen1 from '../views/phase_9/Screen1.vue'
+import Phase9_Screen2 from '../views/phase_9/Screen2.vue'
+import Phase9_Screen3 from '../views/phase_9/Screen3.vue'
+import Phase9_Screen4 from '../views/phase_9/Screen4.vue'
+import Phase9_Screen5 from '../views/phase_9/Screen5.vue'
 import Phase10_Screen1 from '../views/phase_10/Screen1.vue'
 const route =[
     {
@@ -179,6 +184,31 @@ const route =[
         path: '/phase-3-7-1-screen15',
         name: 'phase-3-7-1-screen15',
         component: Phase3_7_1Screen15
+      },
+      {
+        path: '/phase-9-screen1',
+        name: 'phase-9-screen1',
+        component: Phase9_Screen1
+      },
+      {
+        path: '/phase-9-screen2',
+        name: 'phase-9-screen2',
+        component: Phase9_Screen2
+      },
+      {
+        path: '/phase-9-screen3',
+        name: 'phase-9-screen3',
+        component: Phase9_Screen3
+      },
+      {
+        path: '/phase-9-screen4',
+        name: 'phase-9-screen4',
+        component: Phase9_Screen4
+      },
+      {
+        path: '/phase-9-screen5',
+        name: 'phase-9-screen5',
+        component: Phase9_Screen5
       },
       {
         path: '/phase-10-screen1',
