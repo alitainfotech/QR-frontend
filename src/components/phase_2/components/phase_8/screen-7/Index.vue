@@ -1,5 +1,5 @@
 <template>
-  <div>screen-3-7-1-5
+  <div>screen-7
     <BaseTitle>
       <template v-slot:text> SUMMARY | XXXX </template>
     </BaseTitle>
@@ -48,21 +48,10 @@
         class="px-2"
       />
     </div>
-    <InfoDialog>
-      <template v-slot:title>
-        Cannot Proceed!
-      </template>
-      <template v-slot:content>
-        <p class="">
-          You cannot proceed until you have completed the photo capture of all required locations.
-        </p>
-      </template>
-    </InfoDialog>
   </div>
 </template>
 <script setup>
 import { ref } from "vue";
-import InfoDialog from "../../../../common/InfoDialog.vue";
 const data = ref([
   {
     title: "Phase 1",

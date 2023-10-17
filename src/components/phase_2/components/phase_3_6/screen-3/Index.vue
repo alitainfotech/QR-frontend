@@ -48,18 +48,24 @@
         class="px-2"
       />
     </div>
-
-    <InfoDialog>
-      <template v-slot:title>
-        Passcode to Continue
-      </template>
+    <CommonInputDialog>
+      <template v-slot:title> Passcode to Continue </template>
       <template v-slot:content>
-        <p class="px-4">
-          Please enter a system passcode in<br/> order to continue.
+        <div class="pa-4">
+          <p class="pt-5 text-18-medium text-secondary text-center">
+          Please enter a system passcode in<br />
+          order to continue.
         </p>
+        <div class="px-11 pt-2 pb-5">
+          <BaseDialogInput placeholderText="Passcode" />
+        </div>
+        </div>
+        
       </template>
-    </InfoDialog>
-    
+      <template v-slot:footer>
+        <BaseFlatButton btnText="enter" color="primary" />
+      </template>
+    </CommonInputDialog>
   </div>
 </template>
 <script setup>

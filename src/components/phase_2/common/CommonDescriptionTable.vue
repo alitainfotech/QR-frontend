@@ -1,5 +1,5 @@
 <template>
-  <v-table class="table-style" style="table-layout: fixed">
+  <v-table class="table-style common-description-table" style="table-layout: fixed">
     <tbody>
       <tr v-for="(item,index) in items" :key="index" :class="{'bg-rowBG':index%2!==0}">
         <td style="min-width: calc(100% - 100px)">
@@ -18,10 +18,10 @@
 const props= defineProps(['items'])
 </script>
 <style scoped>
-.v-table > .v-table__wrapper > table > tbody > tr > td {
-  padding: 10px 10px;
+.common-description-table.v-table > .v-table__wrapper > table > tbody > tr > td {
+  padding: 10px 10px !important;
 }
-.v-table--density-default > .v-table__wrapper > table > tbody > tr > td {
+.common-description-table.v-table--density-default > .v-table__wrapper > table > tbody > tr > td {
   height: 0px !important;
 }
 .table-style {
