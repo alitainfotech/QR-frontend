@@ -45,17 +45,22 @@
         class="px-2"
       />
     </div>
-    
-    <InfoDialog>
+    <CommonDialog>
       <template v-slot:title>
         Incoming Garments
       </template>
       <template v-slot:content>
-        <p class="px-4">
-          You are not shipping all the garments in this order.  <br/><br/>Are your sure you want to do this?
+        <p class="">
+          The garments below are incoming:
         </p>
+        <CommonDataTable :items="data" class="mt-2" headerBgColor="bg-primary" textColor="text-primary"/>
       </template>
-    </InfoDialog>
+      <template v-slot:footer>
+        <BaseOutlineButton btnText="Delay Shipment" color="primary-lighten-3"/>
+        <BaseFlatButton btnText="Continue" color="primary"/>
+      </template>
+    </CommonDialog>
+   
   </div>
 </template>
 <script setup>
@@ -63,41 +68,25 @@ import { ref } from "vue";
 import InfoDialog from "../../../../common/InfoDialog.vue";
 const data = ref([
   {
-    title: "Order #",
-    value: "01338",
+    "Order ID": "01381",
+    "Garment":"JA",
+    "Due": "Today",
   },
   {
-    title: "Factory",
-    value: "B",
+    "Order ID": "01381",
+    "Garment":"JA",
+    "Due": "Today",
   },
   {
-    title: "Start Date",
-    value: "27-09-023",
+    "Order ID": "01381",
+    "Garment":"JA",
+    "Due": "Today",
   },
   {
-    title: "Due Date",
-    value: "21-09-23",
+    "Order ID": "01381",
+    "Garment":"JA",
+    "Due": "Today",
   },
-  {
-    title: "Arrival Date",
-    value: "22-09-23",
-  },
-  {
-    title: "Factory",
-    value: "3.5",
-  },
-  {
-    title: "Start Date",
-    value: "23-09-23",
-  },
-  {
-    title: "Due Date",
-    value: "24-09-23",
-  },  
-  {
-    title: "Arrival Date",
-    value: "24-09-23",
-  },  
 ]);
 const items = ref([
   "California",
