@@ -28,6 +28,7 @@ import Phase3_7_1Screen12 from '../views/phase_3_7_1/Screen12.vue'
 import Phase3_7_1Screen13 from '../views/phase_3_7_1/Screen13.vue'
 import Phase3_7_1Screen14 from '../views/phase_3_7_1/Screen14.vue'
 import Phase3_7_1Screen15 from '../views/phase_3_7_1/Screen15.vue'
+import Phase10_Screen1 from '../views/phase_10/Screen1.vue'
 const route =[
     {
         path: '/phase-0-1-screen1',
@@ -178,6 +179,11 @@ const route =[
         path: '/phase-3-7-1-screen15',
         name: 'phase-3-7-1-screen15',
         component: Phase3_7_1Screen15
+      },
+      {
+        path: '/phase-10-screen1',
+        name: 'phase-10-screen1',
+        component: Phase10_Screen1
       },
 ]
 export default route
