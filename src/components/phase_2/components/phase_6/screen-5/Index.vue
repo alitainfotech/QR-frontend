@@ -46,16 +46,20 @@
       />
     </div>
     
-    <InfoDialog>
+    <CommonDialog>
       <template v-slot:title>
         Are you Sure?
       </template>
       <template v-slot:content>
-        <p class="px-4">
+        <p class="">
           You are extracting all of the garments for this Order from International Storage for the purpose of International Export
         </p>
       </template>
-    </InfoDialog>
+      <template v-slot:footer>
+        <BaseOutlineButton btnText="Go Back" color="primary-lighten-3"/>
+        <BaseFlatButton btnText="CORRECT" color="primary"/>
+      </template>
+    </CommonDialog>
   </div>
 </template>
 <script setup>
