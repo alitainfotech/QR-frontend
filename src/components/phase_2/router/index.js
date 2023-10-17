@@ -21,6 +21,7 @@ import Phase3_7_1Screen5 from '../views/phase_3_7_1/Screen5.vue'
 import Phase3_7_1Screen6 from '../views/phase_3_7_1/Screen6.vue'
 import Phase3_7_1Screen7 from '../views/phase_3_7_1/Screen7.vue'
 import Phase3_7_1Screen8 from '../views/phase_3_7_1/Screen8.vue'
+
 import Phase3_7_2Screen1 from '../views/phase_3_7_2/Screen1.vue'
 import Phase3_7_2Screen2 from '../views/phase_3_7_2/Screen2.vue'
 import Phase3_7_2Screen3 from '../views/phase_3_7_2/Screen3.vue'
@@ -34,6 +35,12 @@ import Phase4Screen2 from '../views/phase_4/Screen2.vue'
 import Phase4Screen3 from '../views/phase_4/Screen3.vue'
 import Phase4Screen4 from '../views/phase_4/Screen4.vue'
 import Phase4Screen5 from '../views/phase_4/Screen5.vue'
+import Phase9_Screen1 from '../views/phase_9/Screen1.vue'
+import Phase9_Screen2 from '../views/phase_9/Screen2.vue'
+import Phase9_Screen3 from '../views/phase_9/Screen3.vue'
+import Phase9_Screen4 from '../views/phase_9/Screen4.vue'
+import Phase9_Screen5 from '../views/phase_9/Screen5.vue'
+import Phase10_Screen1 from '../views/phase_10/Screen1.vue'
 
 const route =[
     {
@@ -210,6 +217,36 @@ const route =[
         path: '/phase-4-screen5',
         name: 'phase-4-screen5',
         component: Phase4Screen5
+      },
+      {
+        path: '/phase-9-screen1',
+        name: 'phase-9-screen1',
+        component: Phase9_Screen1
+      },
+      {
+        path: '/phase-9-screen2',
+        name: 'phase-9-screen2',
+        component: Phase9_Screen2
+      },
+      {
+        path: '/phase-9-screen3',
+        name: 'phase-9-screen3',
+        component: Phase9_Screen3
+      },
+      {
+        path: '/phase-9-screen4',
+        name: 'phase-9-screen4',
+        component: Phase9_Screen4
+      },
+      {
+        path: '/phase-9-screen5',
+        name: 'phase-9-screen5',
+        component: Phase9_Screen5
+      },
+      {
+        path: '/phase-10-screen1',
+        name: 'phase-10-screen1',
+        component: Phase10_Screen1
       },
 ]
 export default route
