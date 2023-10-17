@@ -53,7 +53,7 @@
         Cannot Proceed!
       </template>
       <template v-slot:content>
-        <p class="px-4">
+        <p class="">
           You cannot proceed until you have completed the photo capture of all required locations.
         </p>
       </template>
