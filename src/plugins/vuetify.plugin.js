@@ -11,6 +11,7 @@ const myCustomLightTheme = {
     "boxBG-3": "#E3BADB",
     "boxBG-4": "#C8BFE0",
     "boxBG-5": "#AA9DEC",
+    "boxBG-6": "#C0A7BE",
     "box-border-1": "#CBCACA",
     "box-border-2": "#F9DAEE",
     "box-border-3": "#CE86C0",
