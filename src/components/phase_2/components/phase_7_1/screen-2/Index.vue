@@ -22,8 +22,8 @@
           class="mb-4"
         />
         <BaseTextField placeholderText="Enter The Airway Bill" class="mb-4" appendInnerIcon="mdi-barcode-scan"/>
-        <BaseCalendar class="mb-4" />
-        <BaseCalendar class="mb-4" />
+        <BaseCalendar class="mb-4" placeholderText="Enter The Departure Date"/>
+        <BaseCalendar class="mb-4" placeholderText="Enter The Arrival Date"/>
         <BaseTextField placeholderText="Orders Included in this Shipment" >
         </BaseTextField>
       </div>
