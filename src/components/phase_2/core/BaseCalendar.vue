@@ -98,4 +98,7 @@ const updateDate=()=>{
 .dp-custom-cell {
   border-radius: 50%;
 }
+.dp__action_row{
+  width: 300px !important;
+}
 </style>
