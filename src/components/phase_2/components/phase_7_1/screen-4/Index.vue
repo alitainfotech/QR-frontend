@@ -28,11 +28,11 @@
         />
         <BaseCalendar class="mb-4" />
         <BaseCalendar class="mb-4" />
-        
+        <VueDatePicker/>
         <!-- <BaseTextField placeholderText="Orders Included in this Shipment" ></BaseTextField> -->
         <v-card class="groupof-selected-orders" variant="flat">
-          <span class="subheading">Select type</span>
-
+          <!-- <span class="subheading">Select type</span> -->
+         <BaseClosableChip/>
           <!-- <v-chip-group
       >
         <v-chip>Extra Soft</v-chip>

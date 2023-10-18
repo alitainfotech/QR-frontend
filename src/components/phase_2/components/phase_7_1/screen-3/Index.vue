@@ -28,19 +28,9 @@
         />
         <BaseCalendar class="mb-4" />
         <BaseCalendar class="mb-4" />
-        
-        <!-- <BaseTextField placeholderText="Orders Included in this Shipment" ></BaseTextField> -->
-        <v-card class="groupof-selected-orders" variant="flat">
-          <span class="subheading">Select type</span>
 
-          <!-- <v-chip-group
-      >
-        <v-chip>Extra Soft</v-chip>
-        <v-chip>Soft</v-chip>
-        <v-chip>Medium</v-chip>
-        <v-chip>Hard</v-chip>
-      </v-chip-group> -->
-        </v-card>
+        <!-- <BaseTextField placeholderText="Orders Included in this Shipment" ></BaseTextField> -->
+        <CommonSelectedOrderGroup :items="selectedOrders"/>
       </div>
       <div class="px-5">
         <p class="text-primary text-uppercase text-16-bold text-center mb-3">
@@ -88,6 +78,8 @@ const orders = ref([
   "01378",
   "01378",
   "01378",
+]);
+const selectedOrders = ref([
   "01378",
 ]);
 const data = ref([
@@ -113,9 +105,3 @@ const data = ref([
   },
 ]);
 </script>
-<style>
-.groupof-selected-orders.v-card {
-  padding: 9px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-</style>
