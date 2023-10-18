@@ -39,6 +39,9 @@ const props = defineProps(['placeholderText','items'])
   color: #050336;
 }
 .mdi:before{
-  color: #050336;
+  color: #000;
+}
+.custome-text-field .v-field__prepend-inner > .v-icon, .v-field__append-inner > .v-icon, .v-field__clearable > .v-icon {
+  opacity: 1 !important;
 }
 </style>

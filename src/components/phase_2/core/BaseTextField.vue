@@ -47,6 +47,9 @@ input.v-field__input:-moz-placeholder {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .mdi:before{
-  color: #050336;
+  color: #000;
+}
+.custome-text-field .v-field__prepend-inner > .v-icon, .v-field__append-inner > .v-icon, .v-field__clearable > .v-icon {
+  opacity: 1 !important;
 }
 </style>
