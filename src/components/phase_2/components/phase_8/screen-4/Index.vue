@@ -13,7 +13,7 @@
     <div class="contentHeight">
       <div class="px-5 mb-10">
       <BaseCalendar placeholderText="Enter The Start Date" class="mb-4"/>
-      <BaseCalendar placeholderText="Enter The Completion Date"/>
+      <BaseCalendar placeholderText="Enter The Finish Date"/>
       
    
     </div>

@@ -15,7 +15,7 @@
       <div class="px-5 mb-5">        
         <BaseSelect placeholderText="Choose The Factory" :items="items" class="mb-4"/>
         <BaseCalendar placeholderText="Enter The Start Date" class="mb-4"/>
-        <BaseCalendar placeholderText="Enter The Completion Date"/>
+        <BaseCalendar placeholderText="Enter The Due Date"/>
       </div>
       <div class="px-5">
         <CommonDescriptionTable :items="data"/>
