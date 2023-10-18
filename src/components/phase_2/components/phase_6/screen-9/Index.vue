@@ -63,7 +63,7 @@
               textColor="text-white"
             />
             <BaseDialogCheckBox
-              
+              checked="true"
               id="checkbox5"
               label="Reason 2"
               value="Reason 2"
@@ -72,7 +72,7 @@
               textColor="text-primary"
             />
              <BaseDialogCheckBox
-              
+              checked="true"
               id="checkbox5"
               label="Reason 3"
               value="Reason 3"
@@ -81,7 +81,7 @@
               textColor="text-primary"
             />
              <BaseDialogCheckBox
-              
+              checked="true"
               id="checkbox5"
               label="Reason 4"
               value="Reason 4"
@@ -90,7 +90,7 @@
               textColor="text-primary"
             />
              <BaseDialogCheckBox
-              
+              checked="true"
               id="checkbox5"
               label="Other"
               value="Other"
@@ -103,7 +103,7 @@
       </template>
       <template v-slot:footer>
         <BaseOutlineButton btnText="Go Back" color="primary-lighten-3" />
-        <BaseFlatButton btnText="Continue" color="primary" />
+        <BaseFlatButton btnText="CONTINUE" color="primary" />
       </template>
     </CommonInputDialog>
   </div>

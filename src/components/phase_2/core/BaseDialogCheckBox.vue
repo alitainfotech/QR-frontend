@@ -37,6 +37,7 @@ border:1px solid transparent; width:100%; align-items:center ;}
 
 .base-dialog-checkbox .round label {
   background-color: #fff;
+  border: 1px solid #E4E3E7;
   /* border: 1px solid #ccc; */
   border-radius: 50%;
   cursor: pointer;
@@ -64,7 +65,7 @@ border:1px solid transparent; width:100%; align-items:center ;}
 .base-dialog-checkbox .round input[type="checkbox"] {visibility: hidden; position:absolute; top:0; left:0;}
 .base-dialog-checkbox .round input[type="checkbox"]:checked + label {
   background-color: #FFF;
-  border-color: #050336;
+  /* border-color: #050336; */
 }
 
 .base-dialog-checkbox .round input[type="checkbox"]:checked + label:after {
