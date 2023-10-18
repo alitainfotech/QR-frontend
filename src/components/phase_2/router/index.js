@@ -69,6 +69,10 @@ import Phase7_1_Screen2 from '../views/phase_7_1/Screen2.vue'
 import Phase7_1_Screen3 from '../views/phase_7_1/Screen3.vue'
 import Phase7_1_Screen4 from '../views/phase_7_1/Screen4.vue'
 
+import Phase7_2_Screen1 from '../views/phase_7_2/Screen1.vue'
+import Phase7_2_Screen2 from '../views/phase_7_2/Screen2.vue'
+import Phase7_2_Screen3 from '../views/phase_7_2/Screen3.vue'
+
 const route =[
     {
         path: '/phase-0-1-screen1',
@@ -386,6 +390,21 @@ const route =[
         path: '/phase-7-1-screen4',
         name: 'phase-7-1-screen4',
         component: Phase7_1_Screen4
+      },
+      {
+        path: '/phase-7-2-screen1',
+        name: 'phase-7-2-screen1',
+        component: Phase7_2_Screen1
+      },
+      {
+        path: '/phase-7-2-screen2',
+        name: 'phase-7-2-screen2',
+        component: Phase7_2_Screen2
+      },
+      {
+        path: '/phase-7-2-screen3',
+        name: 'phase-7-2-screen3',
+        component: Phase7_2_Screen3
       },
       
 ]
