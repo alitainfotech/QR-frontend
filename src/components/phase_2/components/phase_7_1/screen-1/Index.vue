@@ -1,5 +1,5 @@
 <template>
-  <div> 7-1
+  <div>
     <BaseTitle>
       <template v-slot:text> SELECT SUB-PRODUCTS </template>
     </BaseTitle>

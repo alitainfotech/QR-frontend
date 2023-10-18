@@ -22,6 +22,7 @@ const props = defineProps(['placeholderText','items'])
   height:42px;
   padding:10px 15px;
   line-height: 20px ;
+   font-weight: 500 ;
 }
 .v-select .v-field__input input{
   color: #050336;
@@ -36,6 +37,8 @@ const props = defineProps(['placeholderText','items'])
 .v-select .v-field__input input:-moz-placeholder { color: #050336; font-weight: 500 ; opacity:1 ;}
 .v-select .v-field .v-field__append-inner{
   color: #050336;
-
+}
+.mdi:before{
+  color: #050336;
 }
 </style>
