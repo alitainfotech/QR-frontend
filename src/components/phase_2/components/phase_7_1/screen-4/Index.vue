@@ -28,19 +28,9 @@
         />
         <BaseCalendar class="mb-4" />
         <BaseCalendar class="mb-4" />
-        <VueDatePicker/>
+
         <!-- <BaseTextField placeholderText="Orders Included in this Shipment" ></BaseTextField> -->
-        <v-card class="groupof-selected-orders" variant="flat">
-          <!-- <span class="subheading">Select type</span> -->
-         <BaseClosableChip/>
-          <!-- <v-chip-group
-      >
-        <v-chip>Extra Soft</v-chip>
-        <v-chip>Soft</v-chip>
-        <v-chip>Medium</v-chip>
-        <v-chip>Hard</v-chip>
-      </v-chip-group> -->
-        </v-card>
+        <CommonSelectedOrderGroup :items="selectedOrders"/>
       </div>
       <div class="px-5">
         <p class="text-primary text-uppercase text-16-bold text-center mb-3">
@@ -63,6 +53,21 @@
         class="px-2"
       />
     </div>
+    <CommonDialog>
+      <template v-slot:title>
+        Are you Sure?
+      </template>
+      <template v-slot:content>
+        <p class="text-18-medium text-secondary text-center">
+          If you remove these orders from the shipment plan, you will not be able to re-add them again.
+        </p>
+        
+      </template>
+      <template v-slot:footer>
+        <BaseOutlineButton btnText="Go Back" color="primary-lighten-3"/>
+        <BaseFlatButton btnText="REMOVE" color="error-lighten-10"/>
+      </template>
+    </CommonDialog>
   </div>
 </template>
 <script setup>
@@ -88,6 +93,8 @@ const orders = ref([
   "01378",
   "01378",
   "01378",
+]);
+const selectedOrders = ref([
   "01378",
 ]);
 const data = ref([
@@ -113,9 +120,3 @@ const data = ref([
   },
 ]);
 </script>
-<style>
-.groupof-selected-orders.v-card {
-  padding: 9px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-</style>
