@@ -1,55 +1,130 @@
 <template>
-  <div>scree-2
+  <div>
     <BaseTitle>
-      <template v-slot:text> SELECT SUB-PRODUCTS </template>
+      <template v-slot:text> SHIPMENT IN-PROGRESS | 7.2 </template>
     </BaseTitle>
     <BaseSubtitle class="mb-5">
-      <template v-slot:text> CHOOSE THE PRODUCTS YOU NEED <br/> TO DEAL WITH? </template>
+      <template v-slot:text> PREVIEW YOUR SHIPMENT’S <br/>PROGRESS BELOW </template>
     </BaseSubtitle>
 
-    <div class="px-5 mb-10">
-      <BaseNumberButton text="01372" />
-    </div>
-
     <div class="contentHeight">
-      <div class="px-5">
-        <BaseCheckBox
-          id="checkbox1"
-          label="JACKET | 1356681 | Phase 7.2"
-          value="JACKET | 1356681 | Phase 7.2"
-          borderColor="#CBCACA"
-          checked="true"
-          class="bg-boxBG-1"
-        />
-        <BaseCheckBox
-          id="checkbox2"
-          label="TROUSERS | 1356681 | Phase 7.2"
-          value="TROUSERS | 1356681 | Phase 7.2"
-          borderColor="#CBCACA"
-          class="bg-boxBG-1"
-        />
-        <BaseCheckBox
-          id="checkbox3"
-          label="WAISTCOAT | 220556 | Phase 7.2"
-          value="WAISTCOAT | 220556 | Phase 7.2"
-          borderColor="#CBCACA"
-          class="bg-boxBG-2"
-        />
-        <BaseCheckBox
-          id="checkbox4"
-          label="SHIRT | 1301 | PHASE 7.2"
-          value="SHIRT | 1301 | PHASE 7.2"
-          borderColor="#CE86C0"
-          class="bg-boxBG-3"
-        />
-        <BaseCheckBox
-          id="checkbox5"
-          label="SHIRT | 2177 | PHASE 7.2"
-          value="SHIRT | 2177 | PHASE 7.2"
-          borderColor="#A49ABD"
-          class="bg-boxBG-4"
-        />
+      <div class="contentHeight">
+      <div class="pl-5 pr-5 pb-4">
+        <v-table class="rounded-lg" style="table-layout: fixed">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">01</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img                        
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">02</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE TEXT HERE TEXTHERE TEXT TEXT HERE</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">03</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE
+                </span>
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 pt-3" style="vertical-align: top; width: 46px">
+                <span class="text-secondary text-14-bold">04</span>
+              </td>
+              <td
+                class="table--col-border-left table-col-border-right"
+                style="min-width: calc(100% - 104px)"
+              >
+                <span class="text-primary text-14-bold text-uppercase"
+                  >TEXT HERE TEXTHERE HERE TEXTHERE.</span
+                >
+              </td>
+              <td class="hover-camera">
+                <BaseCameraButton>
+                  <template v-slot:icon>
+                    <div>
+                      <v-img
+                        :width="18"
+                        :aspect-ratio="18 / 14"
+                        class="m-auto"
+                        src="/src/assets/img/icons/camera.svg"
+                      ></v-img>
+                    </div>
+                  </template>
+                </BaseCameraButton>
+              </td>
+            </tr>
+         
+          </tbody>
+        </v-table>
       </div>
+    </div>
     </div>
     <!-- <v-divider :thickness="3" color="primary" class="mb-6"></v-divider> -->
     <div class="d-flex justify-center px-5 mb-3">
@@ -57,10 +132,10 @@
         block
         size="x-large"
         color="primary"
-        text="PROCEED"
+        text="SHIPMENT RECEIVED | 8.0"
         icon="mdi-greater-than"
         variant="elevated"
-        fontSize="text-16-bold"
+        fontSize="text-18-bold"
         fontColor="text-white"
         iconSize="small"
         class="px-2"
