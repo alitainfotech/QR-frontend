@@ -22,6 +22,7 @@
         hide-offset-dates
         :month-change-on-scroll="false"
         :enable-time-picker="false"
+       
         @update:model-value="updateDate"
       >
         <template #action-buttons>
