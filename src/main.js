@@ -6,8 +6,10 @@ import router from "./router";
 import vuetifyPlugin from "./plugins/vuetify.plugin";
 import componentloaderPlugin from "./plugins/componentloader.plugin";
 import componentloaderPhase2Plugin from "./plugins/componentloaderPhase2.plugin";
-import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css'
+import VueDatePicker from '@vuepic/vue-datepicker';
+
+
 const app = createApp(App);
 app.use(createPinia());
 app.use(router);

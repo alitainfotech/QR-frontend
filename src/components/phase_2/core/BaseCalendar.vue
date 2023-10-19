@@ -19,6 +19,7 @@
         :range="true"
         text-input
         inline
+        hide-offset-dates
         :month-change-on-scroll="false"
         :enable-time-picker="false"
         @update:model-value="updateDate"
@@ -101,4 +102,9 @@ const updateDate=()=>{
 .dp__action_row{
   width: 300px !important;
 }
+.dp__calendar_item,
+.dp__calendar_header_item {flex-grow: inherit !important;}
+.dp__calendar_row>div, .dp__calendar_header>div {width: 14.28%;}
+.dp__cell_inner{ width:100% !important;}
+
 </style>
